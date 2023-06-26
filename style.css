@@ -1,0 +1,41 @@
+.container{
+    width: 33%;
+}
+.header__img--bparker{
+    width: 20%;
+}
+.flex-head{
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.container--left{
+    display: block;
+}
+.container--right{
+    display: block;
+}
+.flex-head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header__img--miles{
+    width: 60%;
+}
+.header__img--peni{
+    width: 80%;
+}
+.header__img--noir{
+    position: absolute;
+    width: 65%;
+    right: 0;
+    bottom: 0;
+}
+.header__img--ham{
+    position: absolute;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+}

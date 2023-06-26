@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url(fonts/blocktastic/blocktastic.otf);
+    font-family: "Title-Spidey";
+}
+:root{
+    --primary-color: black;
+    --secondary-color: #D31C26;
+    --shadow-color: #83352C;
+    --support-color: #4AB6B6;
+    --support-color2: #2B3784;
+}
+body{
+    background-color: var(--primary-color);
+}
+/*Head*/
+.flex-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.container--left{
+    display: none;
+}
+.container--right{
+    display: none;
+}
+.header__img{
+    width: 100%;
+}
+.container--center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary-color);
+}
+.container--center > h1{
+    font-size: 2remem;
+}
+.logo-spider{
+    width: 40%;
+}
+.container--center > button{
+    width: 60%;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: solid 3px var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.container--center > button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.header__img--bparker{
+    width: 80%;
+}
+/*Grid*/
+main{
+    padding: 15px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.card{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+.title-card{
+    width: 100%;
+}
+.img-card{
+    width: 100%;
+}
+.card--miles{
+    background-image: url("images/background.jpg");
+    border: solid 2px rgb(243, 76, 76);
+}
+.img-card:hover{
+    width: 111%;
+}
+.card--gwen{
+    background-image: url("images/background-gwen.jpg");
+    border: solid 2px var(--support-color);
+}
+.img-card--gwen{
+    width: 70%;
+}
+.img-card--gwen:hover{
+    width: 90%;
+}
+.card--bparker{
+    background-image: url("images/background-bparker.png");
+    border: solid 2px var(--support-color2);
+}
+.img-card--bparker{
+    width: 80%;
+}
+.card--peni{
+    background-image: url("images/background-peni.jpg");
+    border: solid 2px rgb(223, 107, 126);
+}
+.card--ham{
+    background-image: url("images/background-ham.jpg");
+    border: solid 2px var(--shadow-color);
+}
+.card--noir{
+    background-image: url("images/background-noir.jpg");
+    border: solid 2px white;
+}
+.card--noir > img{
+    width: 80%;
+}
